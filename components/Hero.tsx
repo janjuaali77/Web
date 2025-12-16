@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative h-[600px] flex items-center">
+    <div className="relative h-[600px] flex items-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center"
@@ -18,18 +18,18 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 text-white">
         <div className="max-w-2xl">
-          <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-xs font-medium tracking-wider mb-6 backdrop-blur-sm">
+          <span className="inline-block py-1 px-3 border border-white/30 rounded-full text-xs font-medium tracking-wider mb-6 backdrop-blur-sm opacity-0 animate-fade-in-left">
             EST. 1967
           </span>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight mb-6 opacity-0 animate-fade-in-left [animation-delay:200ms]">
             Legacy of Wood, <br/>
             <span className="text-primary-300">Crafted to Perfection.</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 font-light leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-200 mb-8 font-light leading-relaxed opacity-0 animate-fade-in-left [animation-delay:400ms]">
             From classic Chinioti craftsmanship to modern minimal designs. We build furniture that defines your home and office in Rawalpindi and beyond.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#contact" className="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded font-medium transition-colors flex items-center justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in-left [animation-delay:600ms]">
+            <a href="#contact" className="bg-primary-600 hover:bg-primary-500 text-white px-8 py-4 rounded font-medium transition-colors flex items-center justify-center shadow-lg hover:shadow-primary-600/30">
               Start Your Project
               <ChevronRight size={18} className="ml-2" />
             </a>
