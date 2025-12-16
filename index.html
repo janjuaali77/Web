@@ -36,6 +36,30 @@
                 800: '#6e4333',
                 900: '#59382e',
               }
+            },
+            animation: {
+              scroll: 'scroll 40s linear infinite',
+              'fade-in-left': 'fadeInLeft 1s ease-out forwards',
+              'fade-in-right': 'fadeInRight 1s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              fadeInLeft: {
+                '0%': { opacity: '0', transform: 'translateX(-50px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+              },
+              fadeInRight: {
+                '0%': { opacity: '0', transform: 'translateX(50px)' },
+                '100%': { opacity: '1', transform: 'translateX(0)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(50px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
             }
           }
         }
@@ -52,6 +76,12 @@
   }
 }
 </script>
+<style>
+  /* Utility class to pause animation on hover */
+  .hover-pause:hover {
+    animation-play-state: paused;
+  }
+</style>
 <link rel="stylesheet" href="/index.css">
 </head>
   <body>
