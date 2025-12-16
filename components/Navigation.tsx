@@ -23,7 +23,7 @@ const Navigation: React.FC = () => {
               <Phone size={14} className="mr-2" /> 0331-5400327
             </a>
             <span className="flex items-center">
-              <MapPin size={14} className="mr-2" /> St 3, Dhok Kaloor, Rawalpindi
+              <MapPin size={14} className="mr-2" /> St 3, School Road, Askari 7, Rwp
             </span>
           </div>
         </div>
